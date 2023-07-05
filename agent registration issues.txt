@@ -1,0 +1,21 @@
+SELECT * FROM public.ts_agent_registration_issue ORDER BY agent_registration_issue_uid ASC
+
+
+
+UPDATE ts_agent_registration_issue SET attempt_date = '2023-01-21 10:33:25.964' WHERE agent_registration_issue_uid = 1100822944747983211; REG_KEY_NOT_FOUND
+
+UPDATE ts_agent_registration_issue SET attempt_date = '2023-01-21 10:33:42.364' WHERE agent_registration_issue_uid = 1100822972262617451; INACTIVE_ORG
+
+UPDATE ts_agent_registration_issue SET attempt_date = '2023-01-21 10:37:40.872' WHERE agent_registration_issue_uid = 1100823372415996267; REGISTRATION_BLOCKED_ORG
+
+UPDATE ts_agent_registration_issue SET attempt_date = '2023-01-21 10:37:40.872' WHERE agent_registration_issue_uid = 1100969503796072811; Duplicate username
+
+UPDATE ts_agent_registration_issue SET attempt_date = '2023-01-21 10:37:40.872' WHERE agent_registration_issue_uid = 1100969865361854827; username must be an email
+
+UPDATE ts_agent_registration_issue SET attempt_date = '2023-01-21 10:37:40.872' WHERE agent_registration_issue_uid = 1100969879303721323; expired deployment secreat
+
+USERNAME_MUST_BE_EMAIL
+
+
+AgentRegistrationIssueScrubJobCmd   app log 0
+
